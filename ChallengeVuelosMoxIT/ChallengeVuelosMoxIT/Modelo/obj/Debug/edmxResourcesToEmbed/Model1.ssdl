@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VuelosModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Vuelo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Numero" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="HorarioLlegada" Type="time" Precision="7" Nullable="false" />
+    <Property Name="LineaAerea" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="Demorado" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="VuelosModelStoreContainer">
+    <EntitySet Name="Vuelo" EntityType="Self.Vuelo" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

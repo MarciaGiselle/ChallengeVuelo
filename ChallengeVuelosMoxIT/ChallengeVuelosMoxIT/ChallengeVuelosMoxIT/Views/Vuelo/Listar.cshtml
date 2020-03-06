@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "Listado de vuelos";
+}
+@model List<Modelo.Vuelo>
+
+@Html.Partial("_pvMensajes")
+
+<div class="row d-flex justify-content-around">
+    <div class="col-md-12">
+        <div class="card shadow ">
+            <div class="card-header pt-3">
+                <h5 class="text-primary text-uppercase float-left d-inline-flex"><i class="fa fa-plane mr-2"></i>Próximos vuelos</h5>
+                <div class="float-right d-inline-flex">
+                    <a class="btn btn-outline-success pull-right d-flex" href="@Url.Action("Crear", "Vuelo", new { id = 0 })"> <i class="fa fa-plus mr-2 py-1"></i>Nuevo vuelo</a>
+
+                </div>
+            </div>
+            <div class="card-body">
+
+                @if (Model.Count != 0)
+                {
+                    <table class="table table-hover table-sm">
+                        <thead>
+                            <tr>
+                                <th class="text-right pr-3" width="175">Horario de llegada</th>
+                                <th>Línea Aérea</th>
+                                <th width="175">Número de Vuelo</th>
+                                <th width="120" class="text-center">Demorado</th>
+                                <th width="180"></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var vuelo in Model)
+                            {
+                                <tr>
+                                    <td class="text-right font-weight-bold pr-3">@(vuelo.HorarioLlegada.Hours.ToString() + ":" + (vuelo.HorarioLlegada.Minutes == 0 ? "00" : vuelo.HorarioLlegada.Minutes.ToString()))</td>
+                                    <td>@vuelo.LineaAerea</td>
+                                    <td>@vuelo.Numero</td>
+                                    <td class="text-center">@(vuelo.Demorado == true ? "Si" : "No")</td>
+                                    <td class="d-flex align-content-between">
+
+                                        <a class="btn btn-primary d-inline-flex btn-sm mr-2" href="@Url.Action("Crear","Vuelo", new { id = vuelo.Id})"> <i class="fa fa-pencil mr-2 py-1"></i>Modificar</a>
+
+                                        @using (Html.BeginForm("EliminarVuelo", "Vuelo", new { Id = vuelo.Id }, FormMethod.Post, new { @class = "d-inline-flex" }))
+                                        {
+                                            <button type="submit" class="btn btn-danger btn-sm d-flex"><i class="fa fa-trash mr-2 py-1"></i>Eliminar</button>
+                                        }
+
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+
+
+
+                }
+                else
+                {
+                    <br /><p class="text-center"><i class="fa fa-exclamation-circle mr-2"></i>Aún no hay elementos cargados.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>

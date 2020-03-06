@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VuelosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="VuelosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Vuelo" EntityType="VuelosModel.Vuelo" />
+  </EntityContainer>
+  <EntityType Name="Vuelo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Numero" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="HorarioLlegada" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="LineaAerea" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="Demorado" Type="Boolean" Nullable="false" />
+  </EntityType>
+</Schema>

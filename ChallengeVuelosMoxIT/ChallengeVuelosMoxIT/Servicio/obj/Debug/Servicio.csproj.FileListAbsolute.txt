@@ -1,0 +1,14 @@
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\Servicio.dll.config
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\Servicio.dll
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\Servicio.pdb
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\EntityFramework.dll
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\Modelo.dll
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\Modelo.pdb
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\Modelo.dll.config
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\EntityFramework.xml
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\obj\Debug\Servicio.dll
+C:\Users\margi\source\repos\ChallengeVuelosMoxIT\ChallengeVuelosMoxIT\Servicio\obj\Debug\Servicio.pdb

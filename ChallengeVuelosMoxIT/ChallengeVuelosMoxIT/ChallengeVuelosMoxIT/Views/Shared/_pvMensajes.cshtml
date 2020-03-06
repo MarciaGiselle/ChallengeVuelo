@@ -1,0 +1,66 @@
+﻿@if (ViewBag.VueloInvalido != null)
+{
+    <div class="row mx-0 justify-content-lg-between my-0 alert-dismissible fade show pr-0 align-items-center">
+        <div class="card-body px-2 pt-2 pb-1 mb-0 text-blue d-flex justify-content-around">
+            <div class="col-lg-8 col-12 mt-4 mb-0">
+                <div class="alert alert-warning row" role="alert">
+                    <div class="col-md-1">
+                        <i class="float-left d-flex fa fa-exclamation-circle mr-3 fa-2x py-2"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <strong> Resultado inesperado !</strong>
+                        <h6>@ViewBag.VueloInvalido </h6>
+                    </div>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@if (ViewBag.CreacionCorrecta != null)
+{
+    <div class="row mx-0 justify-content-lg-between my-0 alert-dismissible fade show pr-0 align-items-center">
+        <div class="card-body px-2 pt-2 pb-1 mb-0 text-blue d-flex justify-content-around">
+            <div class="col-lg-8 col-12 mt-4 mb-0">
+                <div class="alert alert-success row" role="alert">
+                    <div class="col-md-1">
+                        <i class="float-left d-flex fa fa-check-circle-o mr-3 fa-2x py-2"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <strong> Excelente !</strong>
+                        <h6>@ViewBag.CreacionCorrecta </h6>
+                    </div>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+@if (ViewBag.EliminacionCorrecta != null)
+{
+    <div class="row mx-0 justify-content-lg-between my-0 alert-dismissible fade show pr-0 align-items-center">
+        <div class="card-body px-2 pt-2 pb-1 mb-0 text-blue d-flex justify-content-around">
+            <div class="col-lg-8 col-12 mt-4 mb-0">
+                <div class="alert alert-primary row" role="alert">
+                    <div class="col-md-1">
+                        <i class="float-left d-flex fa fa-minus-circle mr-3 fa-2x py-2"></i>
+                    </div>
+                    <div class="col-md-11">
+                        <strong> Genial !</strong>
+                        <h6>@ViewBag.EliminacionCorrecta </h6>
+                    </div>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}

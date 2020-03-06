@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VuelosModelStoreContainer" CdmEntityContainer="VuelosEntities">
+    <EntitySetMapping Name="Vuelo">
+      <EntityTypeMapping TypeName="VuelosModel.Vuelo">
+        <MappingFragment StoreEntitySet="Vuelo">
+          <ScalarProperty Name="Demorado" ColumnName="Demorado" />
+          <ScalarProperty Name="LineaAerea" ColumnName="LineaAerea" />
+          <ScalarProperty Name="HorarioLlegada" ColumnName="HorarioLlegada" />
+          <ScalarProperty Name="Numero" ColumnName="Numero" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
